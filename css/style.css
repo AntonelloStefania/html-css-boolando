@@ -14,24 +14,20 @@ main{
 }
 
 /* HEADER LAYOUT */
-.h-container{
-    /* height: 100px; */
-    /* background-color: orange; */
-}
 
 .h-row{
     width:100%;
-    /* height: 100%; */
-    background-color: rgb(255, 166, 0);
+    background-color: #FF6900;
     display: flex;
     padding: 10px 0;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1;
 }
 
 .h-col-33{
     width:calc(100% / 3);
-    /* height: 100%; */
-    /* background-color: green;
-    border:1px solid black; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,28 +44,26 @@ main{
 
 .h-logo img{
     width:150px;
-    height: 40px;
+    height: 35px;
 }
 
 .h-icons i{
     padding: 0 5px;
 }
+
 /* FINE STILE HEADER */
 /* MAIN LAYOUT */
 
 .main-row{
     width: 100%;
-    /* height: 700px; */
-    /* background-color: yellow; */
+    margin-top:100px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .main-col-33{
     width: calc(100% / 3 - 20px);
-    /* height:300px; */
-    margin:10px;
-    /* background-color: blueviolet; */
+    margin:20px 10px 30px 10px;
     position: relative;
 }
 
@@ -79,16 +73,14 @@ main{
     width: 100%;
 }
 
-
 .labels{
     color: white;
     position: absolute;
-    bottom:60px;
+    bottom:100px;
 }
 
 .square{
-    padding:5px;
-    font-size: 0.8em;
+    padding:8px;
     font-weight: 600;
 }
 
@@ -96,8 +88,15 @@ main{
     position: absolute;
     top: 10px;
     right:0;
+    font-size: 1.5em;
+    padding-left:13px;
     background-color: #fff;
 }
+
+.white:hover{
+    color: red;
+}
+
 .red{
     background-color: red;
 }
@@ -108,13 +107,13 @@ main{
 
 .new-price{
     color:red;
+    font-weight: bold;
 }
 
 .old-price{
     text-decoration: line-through;
     color:grey;
 }
-
 
 .img:hover .hover-img{
     display: inline;
@@ -130,15 +129,34 @@ main{
 /* FOOTER LAYOUT */
 .footer-row{
     width: 100%;
-    height: 100px;
-    background-color: blue;
+    padding: 20px;
+    background-color: #1A1A1A;
     display: flex;
 }
 
 .footer-col-50{
     width: 50%;
     height: 100%;
-    background-color: aquamarine;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 /* FINE FOOTER LAYOUT */
+/* STILE FOOTER */
+.footer-content{
+    color: white;
+}
+
+.footer-content h3, h5{
+    padding:5px;
+}
+
+.utility-link{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.fa-brands{
+    padding: 5px;
+}
